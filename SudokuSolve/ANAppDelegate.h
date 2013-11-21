@@ -7,9 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import "ANBoardWindow.h"
 
-@interface ANAppDelegate : NSObject <NSApplicationDelegate>
+@interface ANAppDelegate : NSObject <NSApplicationDelegate> {
+    ANBoardWindow * mainWindow;
+}
 
-@property (assign) IBOutlet NSWindow *window;
+- (IBAction)solve:(id)sender;
 
 @end

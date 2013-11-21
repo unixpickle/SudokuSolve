@@ -18,6 +18,12 @@
 		FAEB66E2183C0943001E6231 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FAEB66C1183C0943001E6231 /* Cocoa.framework */; };
 		FAEB66EA183C0943001E6231 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FAEB66E8183C0943001E6231 /* InfoPlist.strings */; };
 		FAEB66EC183C0943001E6231 /* SudokuSolveTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB66EB183C0943001E6231 /* SudokuSolveTests.m */; };
+		FAEB6705183C14C9001E6231 /* ANMutableSudokuBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB6700183C14C9001E6231 /* ANMutableSudokuBoard.m */; };
+		FAEB6706183C14C9001E6231 /* ANSudokuBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB6702183C14C9001E6231 /* ANSudokuBoard.m */; };
+		FAEB6707183C14C9001E6231 /* ANSudokuSolver.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB6704183C14C9001E6231 /* ANSudokuSolver.m */; };
+		FAEB670D183C1530001E6231 /* ANBoardWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB670C183C1530001E6231 /* ANBoardWindow.m */; };
+		FAEB6710183C1550001E6231 /* ANBoardView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB670F183C1550001E6231 /* ANBoardView.m */; };
+		FAEB6713183C204B001E6231 /* ANAlphaView.m in Sources */ = {isa = PBXBuildFile; fileRef = FAEB6712183C204B001E6231 /* ANAlphaView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +56,18 @@
 		FAEB66E7183C0943001E6231 /* SudokuSolveTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SudokuSolveTests-Info.plist"; sourceTree = "<group>"; };
 		FAEB66E9183C0943001E6231 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FAEB66EB183C0943001E6231 /* SudokuSolveTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SudokuSolveTests.m; sourceTree = "<group>"; };
+		FAEB66FF183C14C9001E6231 /* ANMutableSudokuBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANMutableSudokuBoard.h; sourceTree = "<group>"; };
+		FAEB6700183C14C9001E6231 /* ANMutableSudokuBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANMutableSudokuBoard.m; sourceTree = "<group>"; };
+		FAEB6701183C14C9001E6231 /* ANSudokuBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSudokuBoard.h; sourceTree = "<group>"; };
+		FAEB6702183C14C9001E6231 /* ANSudokuBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSudokuBoard.m; sourceTree = "<group>"; };
+		FAEB6703183C14C9001E6231 /* ANSudokuSolver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANSudokuSolver.h; sourceTree = "<group>"; };
+		FAEB6704183C14C9001E6231 /* ANSudokuSolver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANSudokuSolver.m; sourceTree = "<group>"; };
+		FAEB670B183C1530001E6231 /* ANBoardWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBoardWindow.h; sourceTree = "<group>"; };
+		FAEB670C183C1530001E6231 /* ANBoardWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANBoardWindow.m; sourceTree = "<group>"; };
+		FAEB670E183C1550001E6231 /* ANBoardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANBoardView.h; sourceTree = "<group>"; };
+		FAEB670F183C1550001E6231 /* ANBoardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANBoardView.m; sourceTree = "<group>"; };
+		FAEB6711183C204B001E6231 /* ANAlphaView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANAlphaView.h; sourceTree = "<group>"; };
+		FAEB6712183C204B001E6231 /* ANAlphaView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ANAlphaView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +133,15 @@
 		FAEB66C7183C0943001E6231 /* SudokuSolve */ = {
 			isa = PBXGroup;
 			children = (
+				FAEB66FE183C14C9001E6231 /* Classic Solver */,
 				FAEB66D3183C0943001E6231 /* ANAppDelegate.h */,
 				FAEB66D4183C0943001E6231 /* ANAppDelegate.m */,
+				FAEB670B183C1530001E6231 /* ANBoardWindow.h */,
+				FAEB670C183C1530001E6231 /* ANBoardWindow.m */,
+				FAEB6711183C204B001E6231 /* ANAlphaView.h */,
+				FAEB6712183C204B001E6231 /* ANAlphaView.m */,
+				FAEB670E183C1550001E6231 /* ANBoardView.h */,
+				FAEB670F183C1550001E6231 /* ANBoardView.m */,
 				FAEB66D6183C0943001E6231 /* MainMenu.xib */,
 				FAEB66D9183C0943001E6231 /* Images.xcassets */,
 				FAEB66C8183C0943001E6231 /* Supporting Files */,
@@ -152,6 +177,19 @@
 				FAEB66E8183C0943001E6231 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAEB66FE183C14C9001E6231 /* Classic Solver */ = {
+			isa = PBXGroup;
+			children = (
+				FAEB66FF183C14C9001E6231 /* ANMutableSudokuBoard.h */,
+				FAEB6700183C14C9001E6231 /* ANMutableSudokuBoard.m */,
+				FAEB6701183C14C9001E6231 /* ANSudokuBoard.h */,
+				FAEB6702183C14C9001E6231 /* ANSudokuBoard.m */,
+				FAEB6703183C14C9001E6231 /* ANSudokuSolver.h */,
+				FAEB6704183C14C9001E6231 /* ANSudokuSolver.m */,
+			);
+			path = "Classic Solver";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,7 +291,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAEB6713183C204B001E6231 /* ANAlphaView.m in Sources */,
+				FAEB6710183C1550001E6231 /* ANBoardView.m in Sources */,
+				FAEB6707183C14C9001E6231 /* ANSudokuSolver.m in Sources */,
+				FAEB670D183C1530001E6231 /* ANBoardWindow.m in Sources */,
+				FAEB6706183C14C9001E6231 /* ANSudokuBoard.m in Sources */,
 				FAEB66CE183C0943001E6231 /* main.m in Sources */,
+				FAEB6705183C14C9001E6231 /* ANMutableSudokuBoard.m in Sources */,
 				FAEB66D5183C0943001E6231 /* ANAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +509,7 @@
 				FAEB66F1183C0943001E6231 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FAEB66F2183C0943001E6231 /* Build configuration list for PBXNativeTarget "SudokuSolveTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +518,7 @@
 				FAEB66F4183C0943001E6231 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
